@@ -59,3 +59,22 @@ $ docker logs magento
 when it's over will be created a file called "databaseInfo.txt" in your directory (~/src/magento).
 
 Inside will have the information from your database.
+
+## Access the magento
+
+I use [boot2docker](http://boot2docker.io/)
+verifique o ip do [boot2docker](http://boot2docker.io/)
+
+```shell
+
+$ boot2docker ip
+192.168.59.103
+
+```
+Visit the web browser on port 8080.
+
+http://192.168.59.103:8080
+
+I think you will see the magento screen.
+
+Thank U.

@@ -15,6 +15,6 @@ $ docker run -d --name="mariadb" -e "MARIADB_PASS=atpass" -p 3306:3306 --volumes
 ```shell
 
 $ docker run --name="magento-data" -v ~/src/magento:/data johna1203/data
-$ docker run -d -p 8080:80 --link mariadb:mariadb --volumes-from magento-data johna1203/magento
+$ docker run -d -p 8080:80 --link mariadb:mariadb --volumes-from magento-data johna1203/nginx-php-magento
 
 ```

@@ -63,7 +63,7 @@ Inside will have the information from your database.
 ## Access the magento
 
 I use [boot2docker](http://boot2docker.io/)
-verifique o ip do [boot2docker](http://boot2docker.io/)
+check the ip [boot2docker](http://boot2docker.io/)
 
 ```shell
 

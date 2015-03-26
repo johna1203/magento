@@ -32,11 +32,13 @@ Now we will create the container for Magento.
 
 to get access in the magento source code, I am sharing the directory
 
-[-v ~ /src/magento:/data]
+[-v ~/src/magento:/data]
 
 the Magento code will be placed in the directory [~/src/magento] from your computer.
 
 ```shell
+
+$ mkdir ~/src/magento
 
 $ docker run --name="magento-data" -v ~/src/magento:/data johna1203/data
 

@@ -10,7 +10,7 @@ changing the value [-e "MARIADB_PASS=yourmariadbpassword"]
 
 $ docker run --name="mariadb-data" johna1203/docker-data
 
-$ docker run -d --name="mariadb" -e "MARIADB_PASS=yourmariadbpassword" -p 3306:3306 --volumes-from mariadb-data johna1203/mariadb
+$ docker run -d --name="mariadb" -e "MARIADB_PASS=yourmariadbpassword" -p 3306:3306 --volumes-from mariadb-data johna1203/docker-mariadb
 
 ```
 

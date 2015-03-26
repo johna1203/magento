@@ -55,3 +55,7 @@ You can check the progress using the docker logs
 $ docker logs magento
 
 ```
+
+when it's over will be created a file called "databaseInfo.txt" in your directory (~/src/magento).
+
+Inside will have the information from your database.

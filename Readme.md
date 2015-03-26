@@ -40,7 +40,7 @@ the Magento code will be placed in the directory [~/src/magento] from your compu
 
 $ mkdir ~/src/magento
 
-$ docker run --name="magento-data" -v ~/src/magento:/data johna1203/data
+$ docker run --name="magento-data" -v ~/src/magento:/data johna1203/docker-data
 
 $ docker run --name="magento" -d -p 8080:80 --link mariadb:mariadb --volumes-from magento-data johna1203/nginx-php-magento
 

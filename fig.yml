@@ -1,0 +1,20 @@
+mariadbdata:
+  image: johna1203/docker-data
+mariadb:
+  image: johna1203/docker-mariadb
+  volumes_from:
+   - magentodata
+  ports:
+   - "3306:3306"
+magentodata:
+  image: johna1203/docker-data
+  volumes:
+   - ./magento:/data
+web:
+  build: .
+  ports:
+   - "80:80"
+  volumes_from:
+   - magentodata
+  links:
+   - mariadb:mariadb

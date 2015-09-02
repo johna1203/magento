@@ -42,7 +42,9 @@ $ mkdir ~/src/magento
 
 $ docker run --name="magento-data" -v ~/src/magento:/data johna1203/docker-data
 
-$ docker run --name="magento" -d -p 8080:80 --link mariadb:mariadb --volumes-from magento-data johna1203/nginx-php-magento
+$ docker run -d -p 8080:80 --link mariadb:mariadb --name="magento" -e "USER_NAME=johna" -e "PASSWORD=testtest" \
+-e "FIRSTNAME=Johnathan" -e "LASTNAME=Froeming" -e "EMAIL=johnathan@kodokuman.com" -e "VIRTUAL_HOST=www.yourdomain.com" \
+ --volumes-from magento-data johna1203/nginx-php-magento
 
 ```
 

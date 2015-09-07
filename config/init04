@@ -1,3 +1,5 @@
 #!/bin/sh
 
 get_magento
+
+chown -R core. /data/http
